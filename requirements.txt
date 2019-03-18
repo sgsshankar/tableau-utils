@@ -1,0 +1,5 @@
+tinys3
+easygui
+pyyaml
+configparser
+boto
