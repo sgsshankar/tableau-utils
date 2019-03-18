@@ -2,12 +2,11 @@ from distutils.core import setup
 import py2exe
 import os
  
-includes = ['tinys3', 'easygui','yaml','boto']
+includes = ['tinys3','yaml','boto']
 excludes = ['_gtkagg', 'bsddb', 'curses', 'pywin.debugger',
             'pywin.debugger.dbgcon', 'pywin.dialogs']
 packages = []
 dll_excludes = []
-windowbuild = ['tsrest.py','tsconfig.py','tsconfigrest.py']
 consolebuild = ['tsback.py']
 options = {"py2exe": {"compressed": 2, 
                           "optimize": 2,
@@ -26,6 +25,4 @@ options = {"py2exe": {"compressed": 2,
                          }
               }
  
-setup(name="Tableau Util", description="Tableau Util", author="Shankar Narayanan SGS", platforms="windows", options=options, zipfile = "library.zip", windows = windowbuild)
-
-setup(name="Tableau Util", description="Tableau Util", author="Shankar Narayanan SGS", platforms="windows", options = options, zipfile = "library.zip",console=consolebuild)
+setup(name="Tableau Utils", description="bunch of useful utilities for Tableau", author="Shankar Narayanan SGS", platforms="windows", options = options, zipfile = "library.zip",console=consolebuild)
