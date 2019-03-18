@@ -7,6 +7,7 @@ excludes = ['_gtkagg', 'bsddb', 'curses', 'pywin.debugger',
             'pywin.debugger.dbgcon', 'pywin.dialogs']
 packages = []
 dll_excludes = []
+windowbuild = []
 consolebuild = ['tsback.py']
 options = {"py2exe": {"compressed": 2, 
                           "optimize": 2,
