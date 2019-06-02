@@ -26,4 +26,4 @@ options = {"py2exe": {"compressed": 2,
                          }
               }
  
-setup(name="Tableau Utils", description="bunch of useful utilities for Tableau", author="Shankar Narayanan SGS", platforms="windows", options = options, zipfile = "library.zip",console=consolebuild)
+setup(name="Tableau Utils", description="bunch of useful utilities for Tableau", author="Shankar Narayanan SGS", platforms="windows", options = options, zipfile = "library.zip", console=consolebuild)

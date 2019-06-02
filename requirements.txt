@@ -2,3 +2,4 @@ tinys3
 pyyaml
 configparser
 boto
+py2exe
